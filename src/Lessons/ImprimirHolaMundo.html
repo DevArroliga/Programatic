@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .Centrado{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .ColorH{
-            background-color: rgb(63, 63, 150);
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .FuenteP{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Guia</title>
 </head>
 <body>
-    <h1 class="Centrado ColorH">Imprimir un Hola mundo con System.out.printl</h1>
+    
+    <h2 class="Centrado">Definición</h2>    
+    
+    <header class="header" id="header">
 
+        <h1 class="Centrado ColorH">Imprimir un Hola mundo con System.out.println</h1>    
     
-    <h2 class="Centrado">Definición</h2>
+        <nav class="navbar container">
+            <div class="menu" id="menu">
+                <ul class="list">
+
+                    <li class="list-item">
+                        <a href="#"  class="list-link current">Hola Mundo</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="IntroduccionBasica.html" target="_blank" class="list-link">Introduccion</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="IntroduccionBasica.html" target="_blank" class="list-link">Proximamente</a>
+                    </li>
+        
+                </ul>
+            </div>
+        </nav>
+
+    </header>
     
-    <div class="Centrado">
+    <div class="Centrado-Centering">
+            
         <ol>
             <!--https://www.geeksforgeeks.org/system-out-println-in-java/-->
-            <li>System: Es la clase definida dentro del paquete java.lang.package.</li>
-            <li>out: Es una instancia de la clase "PrintStream", la cual es un miembro público y estático de la clase "System".</li>
-            <li>printl(): Imprime cualquier argumento colocado dentro del parentesis. Podemos asumir que System.out representa el "Standard Output Stream".</li>
+            <li class="Overhelm">System: Es la clase definida dentro del paquete java.lang.package.</li>
+            <li class="Overhelm">out: Es una instancia de la clase "PrintStream", la cual es un miembro público y estático de la clase "System".</li>
+            <li class="Overhelm">printl(): Imprime cualquier argumento colocado dentro del parentesis. Podemos asumir que System.out representa el
+                <br>"Standard Output Stream".</li>
         </ol>
-    </div>
-    
-    <div class="Centrado">
-        <img src="../Images/Println.jpg" alt="Println">
+
     </div>
 
-    <h2 class="Centrado">Sintaxis</h2>
+    <div class="Centrado">
+        <img loading="lazy" src="../Images/Println.jpg" alt="Println">
+    </div>
+
+    <h2 class="Centrado-Centering">Sintaxis</h2>
     <p class="Centrado">System.out.printl(parametro)</p>
 
     <div class="Centrado">
         <img src="../Images/HolaMundo.jpg" alt="Hola mundo en consola.">
     </div>
-    
+
     <div>
         <p class="Centrado">Salida: Hola mundo</p>
     </div>

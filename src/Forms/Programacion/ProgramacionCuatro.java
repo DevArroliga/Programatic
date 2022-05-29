@@ -203,6 +203,11 @@ public class ProgramacionCuatro extends javax.swing.JFrame {
         btnRegresar.setText("Regresar");
 
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
 
         btnValidar.setText("Validar");
         btnValidar.addActionListener(new java.awt.event.ActionListener() {
@@ -328,7 +333,6 @@ public class ProgramacionCuatro extends javax.swing.JFrame {
             contadorValidacion += 1;
             lblErrorDefault.setText("");
             txtDefault.setEditable(false);
-
         }
         else{
             lblErrorDefault.setForeground(Color.red);
@@ -342,6 +346,13 @@ public class ProgramacionCuatro extends javax.swing.JFrame {
             btnSiguiente.setVisible(true);
         }
     }//GEN-LAST:event_btnValidarActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+        ProgramacionCinco programacionCinco = new ProgramacionCinco();
+        this.setVisible(false);
+        programacionCinco.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments

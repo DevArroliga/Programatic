@@ -217,7 +217,6 @@ public class PrevioProgramacionDos extends javax.swing.JFrame {
             lblValidacion.setText("Respuesta correcta");
             btnValidar.setVisible(false);
             btnSiguiente.setVisible(true);
-            JOptionPane.showMessageDialog(null, "Respuesta correcta, presione Siguiente para continuar.");
         }
         
     }

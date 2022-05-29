@@ -108,6 +108,11 @@ public class ProgramacionTres extends javax.swing.JFrame {
         btnRegresar.setText("Regresar");
 
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
 
         btnVerificar.setText("Verificar");
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
@@ -187,13 +192,19 @@ public class ProgramacionTres extends javax.swing.JFrame {
             lblValidacion.setText("Respuesta correcta");
             btnVerificar.setVisible(false);
             btnSiguiente.setVisible(true);
-            JOptionPane.showMessageDialog(null, "Respuesta correcta, presione Siguiente para continuar.");
         }
         else{
             lblValidacion.setForeground(Color.red);
             lblValidacion.setText("Respuesta equivocada");
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+        ProgramacionCuatro programacionCuatro = new ProgramacionCuatro();
+        this.setVisible(false);
+        programacionCuatro.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments

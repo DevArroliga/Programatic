@@ -213,6 +213,9 @@ public class ProgramacionDos extends javax.swing.JFrame {
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
+        ProgramacionTres programacionTres = new ProgramacionTres();
+        this.setVisible(false);
+        programacionTres.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
     
     private void validarRespuesta(int x){
@@ -226,7 +229,6 @@ public class ProgramacionDos extends javax.swing.JFrame {
             lblValidacion.setText("Respuesta correcta");
             btnValidar.setVisible(false);
             btnSiguiente.setVisible(true);
-            JOptionPane.showMessageDialog(null, "Respuesta correcta, presione Siguiente para continuar.");
         }
         
     }
