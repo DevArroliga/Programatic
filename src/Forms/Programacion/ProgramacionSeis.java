@@ -246,7 +246,7 @@ public class ProgramacionSeis extends javax.swing.JFrame {
         }
         
         if (linea == 2){
-            lblErrorLineaFor.setText("");
+            lblErrorLineaFor.setVisible(false);
         }
         
         if(c.equals("i")) {
