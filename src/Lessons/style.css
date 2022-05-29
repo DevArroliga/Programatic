@@ -77,7 +77,27 @@ i{
    font-size: var(--font-size-md); 
 }
 
+th, td{
+    border: 1px solid rgb(107, 107, 107);
+    border-collapse: collapse;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
+.general-padding{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.title-padding{
+    padding: 20px;
+}
+
+.enter-spacing{
+    padding: 10px;
+}
 
 .place-items-center{
     display: inline-flex;

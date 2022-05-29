@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Programatic: Las Variables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="header" id="header">
+    <h1 class="Centrado ColorH">Las Bases de la Programacion</h1>    
+    <nav class="navbar container">
+        <div class="menu" id="menu">
+            <ul class="list">
+                <li class="list-item">
+                  <a href="ImprimirHolaMundo.html" target="_blank" class="list-link">Hola Mundo</a>
+                </li>
+                <li class="list-item">
+                    <a href="IntroduccionBasica.html"  class="list-link">Introduccion</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_blank" class="list-link current">Variables</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_blank" class="list-link">Proximamente</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <div class="general-padding">
+    <div>
+      <div class="title-padding">
+        <h2 class="Centrado">Las Variables</h2>
+      </div>
+      <div>
+        <p>
+          Las <b>variables</b> son las herramientas mas importantes de la programacion. 
+          Estas nos <b>sirven para el almacenamiento y manejo de datos</b> dentro de un programa o aplicacion. 
+          Dentro de lo que son las variables, existen diferentes tipos de este: 
+          <b>de numeros</b>, <b>de si o no</b> , <b>de caracteres</b> y <b>de listas</b>.
+          A continuacion se explicaran las bases de los distintos tipos de variables y como usarlas.
+        </p>
+      </div>
+    </div>
+    <div>
+        <div>
+            <div class="title-padding">
+              <h2 class="Centrado"> <br> Las de numeros</h2>
+            </div>
+            <div class="Centrado">
+              <p>
+                Dentro de las variables que tienen que ver con numeros se encuentran aquellas mencionadas anteriormente como int, float y double.
+                Ademas de estas variables, existen otras variables como byte, short y long.           
+              </p>
+            </div>
+            <div class="enter-spacing"></div>
+            <div>
+              <p>
+                Las variables de numeros se pueden dividir en dos categorias, en numeros enteros y decimales. 
+                Las variables que caen dentro de los numeros enteros son: byte, short, int y long. 
+                La diferencia entre estas variables recae en la cantidad de digitos pueden contener. 
+                Por lo general se usa la variable <b>int</b> para guardar numeros enteros gracias a su flexibilidad y optimizacion. 
+              </p>
+            </div>
+            <div class="enter-spacing"></div>
+            <div>
+              <table style="width: 100%" class="Centrado">
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Tamaño</th>
+                      <th>Rango</th>
+                  </tr>
+                  <tr>
+                      <td> byte </td>
+                      <td> 8 bit </td>
+                      <td> -128 a 128 </td>
+                  </tr>
+                  <tr>
+                      <td> short</td>
+                      <td> 16 bits</td>
+                      <td> -32,768 a 32,768 </td>
+                  </tr>
+                  <tr>
+                      <td> int </td>
+                      <td> 32 bit </td>
+                      <td> -2,147,483,648 a 2,147,483,648</td>
+                    </tr>
+                    <tr>
+                      <td> long</td>
+                      <td> 64 bits</td>
+                      <td> -9*10^18 a 9*10^18</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="enter-spacing"></div>
+            <div class="Centrado">
+                <p>
+                  Por el otro lado, las variables que caen dentro de los decimales son: float y double. 
+                  Estas dos variables tambien se diferencian por la cantidad de digitos que pueden almacenar.
+                  En la programacion se usa ambas variables dependiendo del contexto y la necesidad.
+                </p>
+            </div>
+            <div class="enter-spacing"></div>
+            <div>
+              <table style="width: 100%" class="Centrado">
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Tamaño</th>
+                      <th>Rango</th>
+                  </tr>
+                  <tr>
+                      <td> float </td>
+                      <td> 32 bit </td>
+                      <td> -3.4*10^38 a 3.4*10^38 </td>
+                  </tr>
+                  <tr>
+                      <td> double </td>
+                      <td> 64 bits</td>
+                      <td> -1.79*10^308 a 1.79*10^308 </td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+          <div>
+              <div class="title-padding">
+                  <h3 class="Centrado"> <br> Sintaxis</h3>
+              </div>
+              <div class="Centrado">
+                  <p>
+                      La sintaxis para la creacion de una nueva variable consiste en escribir el tipo de variable seguido por un nombre (cerrado por un punto y coma).        
+                  </p>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <img src = images/EjemploVar.jpg alt = " "  width="400" height="280"/>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <p>
+                      El guardado de numeros enteros dentro de una variable creada consiste en simplemente igualar la variable al numero entero a guardar. 
+                      Cualquier tipo de dato afuera de un numero entero causaria un error de compilacion.        
+                  </p>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <img src = images/EjemploVarAsig.jpg alt = " " width="600" height="280"/>
+              </div>
+          </div>
+    </div>
+    
+    <div>
+        <div>
+            <div class="title-padding">
+                <h2 class="Centrado"> <br> La de Si o No</h2>
+            </div>
+            <div class="Centrado">
+              <p>
+                La variable de "Si o No" se conoce como bool. Esta es una variable con el tamaño de un bit y el rango de 0 y 1. 
+                Todo esto queriendo decir que la variable bool es una variable binaria que permite guardar un valor de verdadero y falso.           
+              </p>
+            </div>
+            <div class="enter-spacing"></div>
+            <div>
+              <table style="width: 100%" class="Centrado">
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Tamaño</th>
+                      <th>Rango</th>
+                  </tr>
+                  <tr>
+                      <td> boolean </td>
+                      <td> 1 bit </td>
+                      <td> True o False </td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+          <div>
+              <div class="title-padding">
+                  <h3 class="Centrado"> <br> Sintaxis</h3>
+              </div>
+              <div class="Centrado">
+                  <p>
+                      La sintaxis para la creacion de una nueva variable de tipo bool consiste en escribir su nombre y el nombre de la variable (cerrado por un punto y coma).
+                      Despues de esto se iguala la variable a True (Verdadero) o False (Falso). Por otro lado, uno es capaz de asignar los valos a traves de un 0 (Falso) o 1 (Verdadero).   
+                  </p>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <img src = images/EjemploVarBool.jpg alt = " "  width="400" height="140"/>
+              </div>
+          </div>
+    </div>
+  </div>
+</body>
+</html>
