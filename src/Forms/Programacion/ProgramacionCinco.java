@@ -280,7 +280,11 @@ public class ProgramacionCinco extends javax.swing.JFrame {
             lblBreakError.setText("X");
         }
         
-        if (contador == 4){
+        if (contador < 4){
+            lblVerificar.setForeground(Color.red);
+            lblVerificar.setText("Respuestas equivocadas");
+        }
+        else if (contador == 4){
             btnValidar.setVisible(false);
             btnSiguiente.setVisible(true);
             lblVerificar.setForeground(Color.green);

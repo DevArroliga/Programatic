@@ -259,12 +259,16 @@ public class ProgramacionSeis extends javax.swing.JFrame {
             lblErrorSystem.setText("X");
         }
         
-        if (contador == 3){
+        if (contador < 3){
+            lblVerificar.setForeground(Color.red);
+            lblVerificar.setText("Respuestas equivocadas");
+        } else if (contador == 3){
             btnValidar.setVisible(false);
             btnSiguiente.setVisible(true);
             lblVerificar.setForeground(Color.green);
             lblVerificar.setText("Respuestas correctas");
         }
+       
         
     }//GEN-LAST:event_btnValidarActionPerformed
 

@@ -345,6 +345,9 @@ public class ProgramacionCuatro extends javax.swing.JFrame {
             btnValidar.setVisible(false);
             btnSiguiente.setVisible(true);
         }
+        else{
+            
+        }
     }//GEN-LAST:event_btnValidarActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
