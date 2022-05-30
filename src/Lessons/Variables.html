@@ -10,21 +10,27 @@
 </head>
 <body>
   <header class="header" id="header">
-    <h1 class="Centrado ColorH">Las Bases de la Programacion</h1>    
+    <h1 class="Centrado ColorH">Las Bases de la Programación</h1>    
     <nav class="navbar container">
         <div class="menu" id="menu">
             <ul class="list">
                 <li class="list-item">
-                  <a href="ImprimirHolaMundo.html" target="_blank" class="list-link">Hola Mundo</a>
+                    <a href="IntroduccionBasica.html" class="list-link">Introducción</a>
                 </li>
                 <li class="list-item">
-                    <a href="IntroduccionBasica.html"  class="list-link">Introduccion</a>
+                    <a href="#" class="list-link current">Variables</a>
                 </li>
                 <li class="list-item">
-                    <a href="#" target="_blank" class="list-link current">Variables</a>
+                  <a href="Operadores.html" class="list-link">Operadores</a>
                 </li>
                 <li class="list-item">
-                    <a href="#" target="_blank" class="list-link">Proximamente</a>
+                  <a href="Condicionales.html" class="list-link">Condicionales</a>
+                </li>
+                <li class="list-item">
+                  <a href="Bucles.html" class="list-link">Bucles</a>
+                </li>
+                <li class="list-item">
+                  <a href="ImprimirHolaMundo.html" class="list-link">Hola Mundo</a>
                 </li>
             </ul>
         </div>
@@ -33,36 +39,36 @@
   <div class="general-padding">
     <div>
       <div class="title-padding">
-        <h2 class="Centrado">Las Variables</h2>
+        <h1 class="Centrado">Las Variables</h1>
       </div>
       <div>
         <p>
-          Las <b>variables</b> son las herramientas mas importantes de la programacion. 
-          Estas nos <b>sirven para el almacenamiento y manejo de datos</b> dentro de un programa o aplicacion. 
-          Dentro de lo que son las variables, existen diferentes tipos de este: 
-          <b>de numeros</b>, <b>de si o no</b> , <b>de caracteres</b> y <b>de listas</b>.
-          A continuacion se explicaran las bases de los distintos tipos de variables y como usarlas.
+          Las <b>variables</b> son las herramientas más importantes de la programación.
+          Estas nos <b>sirven para el almacenamiento y manejo de datos</b> dentro de un programa o aplicación.
+          Dentro de lo que son las variables, existen diferentes tipos de este:
+          <b>de números</b>, <b>de sí o no</b> , <b>de caracteres</b> y <b>de listas</b>.
+          A continuación se explicarán las bases de los distintos tipos de variables y cómo usarlas.
         </p>
       </div>
     </div>
     <div>
-        <div>
-            <div class="title-padding">
-              <h2 class="Centrado"> <br> Las de numeros</h2>
+      <div>
+        <div class="title-padding">
+              <h2 class="Centrado"> <br> Las de números </h2>
             </div>
             <div class="Centrado">
               <p>
-                Dentro de las variables que tienen que ver con numeros se encuentran aquellas mencionadas anteriormente como int, float y double.
-                Ademas de estas variables, existen otras variables como byte, short y long.           
+                Dentro de las variables que tienen que ver con números se encuentran aquellas mencionadas anteriormente como int, float y double.
+                Además de estas variables, existen otras variables como byte, short y long.          
               </p>
             </div>
             <div class="enter-spacing"></div>
             <div>
               <p>
-                Las variables de numeros se pueden dividir en dos categorias, en numeros enteros y decimales. 
-                Las variables que caen dentro de los numeros enteros son: byte, short, int y long. 
-                La diferencia entre estas variables recae en la cantidad de digitos pueden contener. 
-                Por lo general se usa la variable <b>int</b> para guardar numeros enteros gracias a su flexibilidad y optimizacion. 
+                Las variables de números se pueden dividir en dos categorías, en números enteros y decimales.
+                Las variables que caen dentro de los números enteros son: byte, short, int y long.
+                La diferencia entre estas variables recae en la cantidad de dígitos pueden contener.
+                Por lo general se usa la variable <b>int</b> para guardar números enteros gracias a su flexibilidad y optimización. 
               </p>
             </div>
             <div class="enter-spacing"></div>
@@ -98,9 +104,9 @@
             <div class="enter-spacing"></div>
             <div class="Centrado">
                 <p>
-                  Por el otro lado, las variables que caen dentro de los decimales son: float y double. 
-                  Estas dos variables tambien se diferencian por la cantidad de digitos que pueden almacenar.
-                  En la programacion se usa ambas variables dependiendo del contexto y la necesidad.
+                  Por el otro lado, las variables que caen dentro de los decimales son: float y double.
+                  Estas dos variables también se diferencian por la cantidad de dígitos que pueden almacenar.
+                  En la programación se usan ambas variables dependiendo del contexto y la necesidad.
                 </p>
             </div>
             <div class="enter-spacing"></div>
@@ -130,27 +136,28 @@
               </div>
               <div class="Centrado">
                   <p>
-                      La sintaxis para la creacion de una nueva variable consiste en escribir el tipo de variable seguido por un nombre (cerrado por un punto y coma).        
+                    La sintaxis para la creación de una nueva variable consiste en escribir el tipo de variable seguido por un nombre (cerrado por un punto y coma).        
                   </p>
               </div>
               <div class="enter-spacing"></div>
               <div class="Centrado">
-                  <img src = images/EjemploVar.jpg alt = " "  width="400" height="280"/>
+                  <img src = images/EjemploVar.jpg alt = " "  width="280" height="200"/>
               </div>
               <div class="enter-spacing"></div>
               <div class="Centrado">
                   <p>
-                      El guardado de numeros enteros dentro de una variable creada consiste en simplemente igualar la variable al numero entero a guardar. 
-                      Cualquier tipo de dato afuera de un numero entero causaria un error de compilacion.        
+                    El guardado de números enteros dentro de una variable creada consiste en simplemente igualar la variable al número entero a guardar.
+                    Cualquier tipo de dato fuera de un número entero causaría un error de compilación.     
                   </p>
               </div>
               <div class="enter-spacing"></div>
               <div class="Centrado">
-                  <img src = images/EjemploVarAsig.jpg alt = " " width="600" height="280"/>
+                  <img src = images/EjemploVarAsig.jpg alt = " " width="410" height="200"/>
               </div>
           </div>
     </div>
-    
+    <div class="enter-spacing"></div>
+    <div class="enter-spacing"></div>
     <div>
         <div>
             <div class="title-padding">
@@ -184,16 +191,143 @@
               </div>
               <div class="Centrado">
                   <p>
-                      La sintaxis para la creacion de una nueva variable de tipo bool consiste en escribir su nombre y el nombre de la variable (cerrado por un punto y coma).
-                      Despues de esto se iguala la variable a True (Verdadero) o False (Falso). Por otro lado, uno es capaz de asignar los valos a traves de un 0 (Falso) o 1 (Verdadero).   
+                    La sintaxis para la creación de una nueva variable de tipo bool consiste en escribir su nombre y el nombre de la variable (cerrado por un punto y coma).
+                    Después de esto se iguala la variable a True (Verdadero) o False (Falso).
+                    Por otro lado, uno es capaz de asignar los valores a través de un 0 (Falso) o 1 (Verdadero).
                   </p>
               </div>
               <div class="enter-spacing"></div>
               <div class="Centrado">
-                  <img src = images/EjemploVarBool.jpg alt = " "  width="400" height="140"/>
+                  <img src = images/EjemploVarBool.jpg alt = " "  width="300" height="100"/>
+              </div>
+          </div>
+    </div>
+    <div class="enter-spacing"></div>
+    <div class="enter-spacing"></div>
+    <div>
+      <div>
+          <div class="title-padding">
+              <h2 class="Centrado"> <br> La de Caracteres</h2>
+          </div>
+          <div class="Centrado">
+            <p>
+              La variable usada para guardar un carácter se le conoce como char (viniendo de la palabra character).
+              Esta variable es capaz de guardar solamente un carácter Unicode, Unicode siendo el estándar de codificación de caracteres.      
+            </p>
+          </div>
+          <div class="enter-spacing"></div>
+          <div>
+            <table style="width: 100%" class="Centrado">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tamaño</th>
+                    <th>Rango</th>
+                </tr>
+                <tr>
+                    <td> char </td>
+                    <td> 16 bit </td>
+                    <td> Unicode </td>
+                </tr>
+              </table>
+          </div>
+        </div>
+        <div>
+            <div class="title-padding">
+                <h3 class="Centrado"> <br> Sintaxis</h3>
+            </div>
+            <div class="Centrado">
+                <p>
+                  La sintaxis para la creación de una nueva variable de tipo char solamente consiste en escribir su nombre y el nombre de la variable (cerrado por un punto y coma).
+                  Después de esto se iguala la variable al carácter que se le asigna dentro de comillas.
+                </p>
+            </div>
+            <div class="enter-spacing"></div>
+            <div class="Centrado">
+                <img src = images/EjemploVarChar.jpg alt = " "  width="300" height="100"/>
+            </div>
+        </div>
+    </div>
+    <div class="enter-spacing"></div>
+    <div class="enter-spacing"></div>
+    <div>
+      <div>
+        <div class="title-padding">
+              <h2 class="Centrado"> <br> Las de Listas</h2>
+            </div>
+            <div class="Centrado">
+              <p>
+                Existen dos tipos de variables que se pueden considerar variables de listas. Estas variables consisten en String y Arrays.
+                La variable String se usa para guardar una lista de caracteres donde es capaz de guardar caracteres Unicode.
+                Por el otro lado están los Arrays. Los arrays no es una variable de por sí pero un modificador que se le
+                Se puede agregar a otro tipo de variable para hacer una lista de valores de su tipo.
+              </p>
+            </div>
+            <div class="enter-spacing"></div>
+            <div>
+              <table style="width: 100%" class="Centrado">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tamaño</th>
+                  <th>Rango</th>
+                </tr>
+                <tr>
+                  <td> String </td>
+                  <td> 1 bit + x bits </td>
+                  <td> Array de Caracteres </td>
+                </tr>
+                <tr>
+                  <td> Array </td>
+                  <td> 1 bit + x bits </td>
+                  <td> Lista de Variables </td>
+                </tr>
+              </table>
+            </div>
+            <div class="enter-spacing"></div>
+            <div class="Centrado">
+              <p>
+                Los x bits representan la cantidad de bits de todos los elementos dentro del Array.
+              </p>
+            </div>
+            <div class="Centrado">
+              <p>
+                (Un String de 10 caracteres tendría el tamaño máximo de 160 bits más 1 bit del String en sí)
+              </p>
+            </div>
+          </div>
+          <div>
+              <div class="title-padding">
+                  <h3 class="Centrado"> <br> Sintaxis</h3>
+              </div>
+              <div class="Centrado">
+                  <p>
+                    La sintaxis para crear una variable String consiste en escribir la variable seguido por un nombre.
+                    Después de esto se iguala la variable al texto que se le asignará dentro de comillas (y se termina cerrando con un punto y coma).
+                  </p>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <img src = images/EjemploString.jpg alt = " "  width="400" height="100"/>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <p>
+                    En el caso de un Array primero se declara el tipo de variable del que va a ser el Array junto a corchetes( [ ] ).
+                    Luego de eso se escribe el nombre del array y se iguala a los valores que va a contener.
+                    El formato para guardar en un array es dentro de llaves ( {} ) se escriben los valores (respetando su sintaxis individual) separados por comas.    
+                  </p>
+              </div>
+              <div class="enter-spacing"></div>
+              <div class="Centrado">
+                  <img src = images/EjemploArray.jpg alt = " " width="550" height="100"/>
               </div>
           </div>
     </div>
   </div>
+  <footer>
+    <div class="Centrado title-padding">
+      <p>Programatic. 2022</p>
+    </div>
+    <div class="enter-spacing"></div>
+  </footer>
 </body>
 </html>
