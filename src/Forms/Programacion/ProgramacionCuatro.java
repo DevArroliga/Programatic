@@ -22,6 +22,8 @@ public class ProgramacionCuatro extends javax.swing.JFrame {
     public ProgramacionCuatro() {
         initComponents();
         btnSiguiente.setVisible(false);
+        this.setTitle("Condicional Switch");
+
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);

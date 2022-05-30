@@ -22,6 +22,8 @@ public class PrevioProgramacionDos extends javax.swing.JFrame {
     public PrevioProgramacionDos() {
         initComponents();
         btnSiguiente.setVisible(false);
+        this.setTitle("Tipos de datos");
+
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);

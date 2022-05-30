@@ -24,6 +24,8 @@ public class ProgramacionOcho extends javax.swing.JFrame {
         btnSiguiente.setVisible(false);
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
+        this.setTitle("Funciones");
+
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);
     }
 
@@ -279,6 +281,11 @@ public class ProgramacionOcho extends javax.swing.JFrame {
         btnRegresar.setText("Regresar");
 
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
 
         btnVerificar.setText("Verificar");
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
@@ -483,6 +490,13 @@ public class ProgramacionOcho extends javax.swing.JFrame {
         
 
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+        ProgramacionNueve programacionNueve = new ProgramacionNueve();
+        this.setVisible(false);
+        programacionNueve.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments

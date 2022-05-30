@@ -158,6 +158,11 @@ public class ProgramacionCinco extends javax.swing.JFrame {
         btnRegresar.setText("Regresar");
 
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
 
         btnValidar.setText("Validar");
         btnValidar.addActionListener(new java.awt.event.ActionListener() {
@@ -292,6 +297,13 @@ public class ProgramacionCinco extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Salida:\n1\n2\n3\n4\n5");
         }
     }//GEN-LAST:event_btnValidarActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+        ProgramacionSeis programacionSeis = new ProgramacionSeis();
+        this.setVisible(false);
+        programacionSeis.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments

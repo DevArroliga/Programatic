@@ -22,6 +22,8 @@ public class ProgramacionDos extends javax.swing.JFrame {
     public ProgramacionDos() {
         initComponents();
         btnSiguiente.setVisible(false);
+        this.setTitle("Variables y tipos de datos");
+
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);

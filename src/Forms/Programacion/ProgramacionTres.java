@@ -22,6 +22,8 @@ public class ProgramacionTres extends javax.swing.JFrame {
     public ProgramacionTres() {
         initComponents();
         btnSiguiente.setVisible(false);
+                this.setTitle("Condicional If");
+
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);

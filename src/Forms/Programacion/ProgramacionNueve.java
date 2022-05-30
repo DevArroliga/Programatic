@@ -8,6 +8,7 @@ package Forms.Programacion;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,7 +21,9 @@ public class ProgramacionNueve extends javax.swing.JFrame {
      */
     public ProgramacionNueve() {
         initComponents();
-        btnSiguiente.setVisible(false);
+        btnFinalizar.setVisible(false);
+        this.setTitle("Excepciones");
+
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);
@@ -49,7 +52,7 @@ public class ProgramacionNueve extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
         btnVerificar = new javax.swing.JButton();
-        btnSiguiente = new javax.swing.JButton();
+        btnFinalizar = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         lblVerificar = new javax.swing.JLabel();
 
@@ -143,11 +146,14 @@ public class ProgramacionNueve extends javax.swing.JFrame {
             }
         });
 
-        btnSiguiente.setText("Siguiente");
+        btnFinalizar.setText("Finalizar");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFinalizarActionPerformed(evt);
+            }
+        });
 
         jLabel9.setText("Inserte las partes restantes del codigo debajo");
-
-        lblVerificar.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -159,7 +165,7 @@ public class ProgramacionNueve extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnVerificar)
                 .addGap(18, 18, 18)
-                .addComponent(btnSiguiente)
+                .addComponent(btnFinalizar)
                 .addGap(28, 28, 28))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,13 +194,13 @@ public class ProgramacionNueve extends javax.swing.JFrame {
                 .addComponent(jLabel9)
                 .addGap(33, 33, 33)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(lblVerificar)
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegresar)
                     .addComponent(btnVerificar)
-                    .addComponent(btnSiguiente))
+                    .addComponent(btnFinalizar))
                 .addGap(20, 20, 20))
         );
 
@@ -244,11 +250,18 @@ public class ProgramacionNueve extends javax.swing.JFrame {
         }
         else if (contador == 2) {
             btnVerificar.setVisible(false);
-            btnSiguiente.setVisible(true);
+            btnFinalizar.setVisible(true);
             lblVerificar.setForeground(Color.green);
             lblVerificar.setText("Respuestas correctas");
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "¡Felicidades!"
+                + "\n"
+                + "Has terminado todas las lecciones prácticas de Programatic.");
+    }//GEN-LAST:event_btnFinalizarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -286,8 +299,8 @@ public class ProgramacionNueve extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnRegresar;
-    private javax.swing.JButton btnSiguiente;
     private javax.swing.JButton btnVerificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

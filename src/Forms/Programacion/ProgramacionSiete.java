@@ -24,6 +24,8 @@ public class ProgramacionSiete extends javax.swing.JFrame {
         
         btnSiguiente.setVisible(false);
         Toolkit toolkit = getToolkit();
+        this.setTitle("Introducción a funciones");
+
         Dimension tamanyo = toolkit.getScreenSize();
         setLocation(tamanyo.width / 2 - getWidth() / 2, tamanyo.height / 2 - getHeight() / 2);
     }
@@ -177,6 +179,11 @@ public class ProgramacionSiete extends javax.swing.JFrame {
         btnRegresar.setText("Regresar");
 
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
 
         btnVerificar.setText("Validar");
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
@@ -206,9 +213,8 @@ public class ProgramacionSiete extends javax.swing.JFrame {
                 .addContainerGap(71, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(65, 65, 65))))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -318,6 +324,13 @@ public class ProgramacionSiete extends javax.swing.JFrame {
             lblVerificar.setText("Respuestas correctas");
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+        ProgramacionOcho programacionOcho = new ProgramacionOcho();
+        this.setVisible(false);
+        programacionOcho.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments

@@ -21,7 +21,7 @@ public class ProgramacionSeis extends javax.swing.JFrame {
      */
     public ProgramacionSeis() {
         initComponents();
-        this.setTitle("Iterador for");
+        this.setTitle("Iterador foreach con arreglo");
         btnSiguiente.setVisible(false);
         Toolkit toolkit = getToolkit();
         Dimension tamanyo = toolkit.getScreenSize();
@@ -144,6 +144,11 @@ public class ProgramacionSeis extends javax.swing.JFrame {
         jLabel2.setText("Itere el siguiente arreglo por medio de un foreach");
 
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
 
         btnRegresar.setText("Regresar");
 
@@ -275,6 +280,13 @@ public class ProgramacionSeis extends javax.swing.JFrame {
     private void txtVariableIteradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVariableIteradaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtVariableIteradaActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+        ProgramacionSiete programacionSiete = new ProgramacionSiete();
+        this.setVisible(false);
+        programacionSiete.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments
