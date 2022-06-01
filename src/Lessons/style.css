@@ -92,7 +92,7 @@ th, td{
 }
 
 .title-padding{
-    padding: 20px;
+    padding: 10px;
 }
 
 .enter-spacing{
@@ -169,4 +169,16 @@ th, td{
 
 .menu-toggle-icon.activated .close-menu-icon{
     display: block;
+}
+
+.Lineal-Spacing{
+    font-size: 2rem;
+    white-space: pre;
+    padding-left: 20rem;
+}
+
+.If-Text{
+    padding-top: 2rem;
+    font-size: medium;
+    font-weight: 400;
 }
