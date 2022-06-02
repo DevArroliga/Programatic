@@ -6,8 +6,10 @@
 package Forms.Programacion;
 
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.File;
 import javax.swing.JOptionPane;
 
 /**
@@ -55,6 +57,7 @@ public class ProgramacionNueve extends javax.swing.JFrame {
         btnFinalizar = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         lblVerificar = new javax.swing.JLabel();
+        btnAyuda = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -155,6 +158,13 @@ public class ProgramacionNueve extends javax.swing.JFrame {
 
         jLabel9.setText("Inserte las partes restantes del codigo debajo");
 
+        btnAyuda.setText("Ayuda");
+        btnAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAyudaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -162,6 +172,8 @@ public class ProgramacionNueve extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(btnRegresar)
+                .addGap(18, 18, 18)
+                .addComponent(btnAyuda)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnVerificar)
                 .addGap(18, 18, 18)
@@ -200,7 +212,8 @@ public class ProgramacionNueve extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegresar)
                     .addComponent(btnVerificar)
-                    .addComponent(btnFinalizar))
+                    .addComponent(btnFinalizar)
+                    .addComponent(btnAyuda))
                 .addGap(20, 20, 20))
         );
 
@@ -263,6 +276,18 @@ public class ProgramacionNueve extends javax.swing.JFrame {
                 + "Has terminado todas las lecciones prácticas de Programatic.");
     }//GEN-LAST:event_btnFinalizarActionPerformed
 
+    private void btnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAyudaActionPerformed
+        // TODO add your handling code here:
+         try
+        {
+            File file = new File("Lessons\\Excepciones.html");
+            Desktop.getDesktop().open(file);
+        }
+        catch (Exception ex){
+           
+        }
+    }//GEN-LAST:event_btnAyudaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -299,6 +324,7 @@ public class ProgramacionNueve extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAyuda;
     private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnVerificar;
