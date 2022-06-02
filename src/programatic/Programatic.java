@@ -22,9 +22,9 @@ public class Programatic {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        if (JOptionPane.showConfirmDialog(null, "¿Primera vez usando Programatic?", "WARNING",
+        if (JOptionPane.showConfirmDialog(null, "¿Primera vez usando Programatic?", "¡Bienvenido!",
         JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-            if (JOptionPane.showConfirmDialog(null, "¿Desea comenzar leyendo las lecciones de cada tema?", "WARNING",
+            if (JOptionPane.showConfirmDialog(null, "¿Desea comenzar repasando las lecciones de cada tema?", "Lecciones",
             JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
                 try {
                     File file = new File("Lessons\\IntroduccionBasica.html");
@@ -32,7 +32,7 @@ public class Programatic {
                 } catch (IOException ex) {
                 }
             } else {
-                JOptionPane.showMessageDialog(null, "Se le mandara al menú principal");
+                JOptionPane.showMessageDialog(null, "Dirigiéndose al menú principal");
                 Menu menu = new Menu();
                 menu.setVisible(true);   
             }
