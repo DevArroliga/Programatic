@@ -155,6 +155,11 @@ public class ProgramacionSeis extends javax.swing.JFrame {
         });
 
         btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         lblVerificar.setToolTipText("");
 
@@ -296,7 +301,7 @@ public class ProgramacionSeis extends javax.swing.JFrame {
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
         ProgramacionSiete programacionSiete = new ProgramacionSiete();
-        this.setVisible(false);
+        this.dispose();
         programacionSiete.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -312,6 +317,13 @@ public class ProgramacionSeis extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        ProgramacionCinco pd = new ProgramacionCinco();
+        this.dispose();
+        pd.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

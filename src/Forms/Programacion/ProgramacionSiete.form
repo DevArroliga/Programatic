@@ -262,7 +262,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="miMetodo("/>
+                <Property name="text" type="java.lang.String" value="miMetodo(&quot;"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
@@ -274,7 +274,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
-                <Property name="text" type="java.lang.String" value=");"/>
+                <Property name="text" type="java.lang.String" value="&quot;);"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblErrorMetodo">
@@ -303,6 +303,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Regresar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegresarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnSiguiente">
           <Properties>

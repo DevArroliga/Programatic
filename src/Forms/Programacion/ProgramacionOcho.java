@@ -91,7 +91,7 @@ public class ProgramacionOcho extends javax.swing.JFrame {
 
         jLabel2.setText("static void");
 
-        jLabel3.setText("// Crear una funcion verificarEdad() con un parametro entero llamado edad");
+        jLabel3.setText("// Crear una funcion verificarEdad con un parametro entero llamado edad");
 
         jLabel4.setText("(");
 
@@ -282,6 +282,11 @@ public class ProgramacionOcho extends javax.swing.JFrame {
         );
 
         btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
@@ -508,7 +513,7 @@ public class ProgramacionOcho extends javax.swing.JFrame {
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
         ProgramacionNueve programacionNueve = new ProgramacionNueve();
-        this.setVisible(false);
+        this.dispose();
         programacionNueve.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -523,6 +528,13 @@ public class ProgramacionOcho extends javax.swing.JFrame {
            
         }
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        ProgramacionSiete pd = new ProgramacionSiete();
+        this.dispose();
+        pd.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

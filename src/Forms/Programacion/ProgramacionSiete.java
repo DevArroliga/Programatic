@@ -91,11 +91,11 @@ public class ProgramacionSiete extends javax.swing.JFrame {
         jLabel8.setText("public static void main (String[] args) {");
         jLabel8.setToolTipText("");
 
-        jLabel9.setText("miMetodo(");
+        jLabel9.setText("miMetodo(\"");
 
         jLabel10.setText("}");
 
-        jLabel11.setText(");");
+        jLabel11.setText("\");");
 
         lblErrorMain.setText(" ");
         lblErrorMain.setToolTipText("");
@@ -181,6 +181,11 @@ public class ProgramacionSiete extends javax.swing.JFrame {
         jLabel13.setText("funcion mi \"miMetodo\" e imprimir \"Yon\"");
 
         btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
@@ -342,7 +347,7 @@ public class ProgramacionSiete extends javax.swing.JFrame {
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
         ProgramacionOcho programacionOcho = new ProgramacionOcho();
-        this.setVisible(false);
+        this.dispose();
         programacionOcho.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -357,6 +362,13 @@ public class ProgramacionSiete extends javax.swing.JFrame {
            
         }
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        ProgramacionSeis pd = new ProgramacionSeis();
+        this.dispose();
+        pd.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

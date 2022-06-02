@@ -111,6 +111,11 @@ public class ProgramacionTres extends javax.swing.JFrame {
         jLabel2.setText("Hacer cumplir el condicional si X es mayor que Y");
 
         btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +131,6 @@ public class ProgramacionTres extends javax.swing.JFrame {
             }
         });
 
-        lblValidacion.setText("x");
         lblValidacion.setToolTipText("");
 
         btnAyuda.setText("Ayuda");
@@ -179,13 +183,13 @@ public class ProgramacionTres extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblValidacion)
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegresar)
                     .addComponent(btnSiguiente)
                     .addComponent(btnVerificar)
                     .addComponent(btnAyuda))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(14, 14, 14))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -222,7 +226,7 @@ public class ProgramacionTres extends javax.swing.JFrame {
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
         ProgramacionCuatro programacionCuatro = new ProgramacionCuatro();
-        this.setVisible(false);
+        this.dispose();
         programacionCuatro.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -237,6 +241,13 @@ public class ProgramacionTres extends javax.swing.JFrame {
            
         }
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        ProgramacionDos pd = new ProgramacionDos();
+        this.dispose();
+        pd.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

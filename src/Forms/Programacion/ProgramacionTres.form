@@ -92,14 +92,14 @@
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="lblValidacion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnRegresar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnSiguiente" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnVerificar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnAyuda" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -203,6 +203,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Regresar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegresarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnSiguiente">
           <Properties>
@@ -222,7 +225,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblValidacion">
           <Properties>
-            <Property name="text" type="java.lang.String" value="x"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>

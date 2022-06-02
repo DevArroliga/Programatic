@@ -175,7 +175,6 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="lblErrorBreak" min="-2" pref="43" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel11" min="-2" pref="201" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Component id="txtDefault" min="-2" pref="51" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -183,10 +182,11 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="lblErrorDefault" min="-2" pref="43" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="jLabel11" alignment="0" min="-2" pref="229" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="208" max="32767" attributes="0"/>
+                      <EmptySpace pref="180" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -336,6 +336,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Regresar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegresarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnSiguiente">
           <Properties>

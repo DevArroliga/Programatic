@@ -116,6 +116,11 @@ public class ProgramacionDos extends javax.swing.JFrame {
         radioFloat.setText("float");
 
         btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnValidar.setText("Validar");
         btnValidar.addActionListener(new java.awt.event.ActionListener() {
@@ -130,6 +135,8 @@ public class ProgramacionDos extends javax.swing.JFrame {
                 btnSiguienteActionPerformed(evt);
             }
         });
+
+        lblValidacion.setText("x");
 
         btnAyuda.setText("Ayuda");
         btnAyuda.addActionListener(new java.awt.event.ActionListener() {
@@ -155,18 +162,18 @@ public class ProgramacionDos extends javax.swing.JFrame {
                             .addComponent(radioBoolean, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radioInt, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radioString, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(radioFloat, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(radioFloat, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(97, 97, 97)
+                                .addComponent(lblValidacion, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(btnRegresar)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnAyuda)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(btnValidar)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnSiguiente))
-                                    .addComponent(lblValidacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(btnValidar)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnSiguiente)
                                 .addGap(8, 8, 8)))))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -191,9 +198,9 @@ public class ProgramacionDos extends javax.swing.JFrame {
                 .addComponent(radioString)
                 .addGap(18, 18, 18)
                 .addComponent(radioFloat)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addComponent(lblValidacion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegresar)
                     .addComponent(btnValidar)
@@ -229,7 +236,7 @@ public class ProgramacionDos extends javax.swing.JFrame {
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
         ProgramacionTres programacionTres = new ProgramacionTres();
-        this.setVisible(false);
+        this.dispose();
         programacionTres.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -244,6 +251,13 @@ public class ProgramacionDos extends javax.swing.JFrame {
            
         }
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        PrevioProgramacionDos ppd= new PrevioProgramacionDos();
+        this.dispose();
+        ppd.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
     
     private void validarRespuesta(int x){
         if (x == 0){

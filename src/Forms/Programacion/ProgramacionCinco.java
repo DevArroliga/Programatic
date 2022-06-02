@@ -159,6 +159,11 @@ public class ProgramacionCinco extends javax.swing.JFrame {
         jLabel2.setText("Romper la iteración cuando \"i\" sea igual a 5.");
 
         btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
@@ -316,7 +321,7 @@ public class ProgramacionCinco extends javax.swing.JFrame {
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         // TODO add your handling code here:
         ProgramacionSeis programacionSeis = new ProgramacionSeis();
-        this.setVisible(false);
+        this.dispose();
         programacionSeis.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -331,6 +336,13 @@ public class ProgramacionCinco extends javax.swing.JFrame {
            
         }
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        // TODO add your handling code here:
+        ProgramacionCuatro pd = new ProgramacionCuatro();
+        this.dispose();
+        pd.setVisible(true);
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
