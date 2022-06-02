@@ -6,8 +6,10 @@
 package Forms.Programacion;
 
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.File;
 import javax.swing.JOptionPane;
 
 /**
@@ -63,6 +65,7 @@ public class ProgramacionSiete extends javax.swing.JFrame {
         btnSiguiente = new javax.swing.JButton();
         btnVerificar = new javax.swing.JButton();
         lblVerificar = new javax.swing.JLabel();
+        btnAyuda = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -173,7 +176,7 @@ public class ProgramacionSiete extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jLabel12.setText("Crear un parametro llamado \"nombre\" de tipo String a la");
+        jLabel12.setText("Añadir un parametro llamado \"nombre\" de tipo String a la");
 
         jLabel13.setText("funcion mi \"miMetodo\" e imprimir \"Yon\"");
 
@@ -193,36 +196,45 @@ public class ProgramacionSiete extends javax.swing.JFrame {
             }
         });
 
+        lblVerificar.setText("x");
+
+        btnAyuda.setText("Ayuda");
+        btnAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAyudaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblVerificar, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(btnRegresar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSiguiente)))
-                .addGap(18, 18, 18)
-                .addComponent(btnVerificar)
-                .addGap(25, 25, 25))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(71, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(65, 65, 65))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(btnRegresar)
+                .addGap(18, 18, 18)
+                .addComponent(btnAyuda)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblVerificar, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnSiguiente)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnVerificar)))
+                .addGap(25, 25, 25))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(201, 201, 201)
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(105, 105, 105)
+                        .addGap(117, 117, 117)
                         .addComponent(jLabel13)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -235,15 +247,16 @@ public class ProgramacionSiete extends javax.swing.JFrame {
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
+                .addGap(31, 31, 31)
                 .addComponent(lblVerificar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVerificar)
                     .addComponent(btnSiguiente)
-                    .addComponent(btnRegresar))
+                    .addComponent(btnRegresar)
+                    .addComponent(btnAyuda))
                 .addGap(23, 23, 23))
         );
 
@@ -333,6 +346,18 @@ public class ProgramacionSiete extends javax.swing.JFrame {
         programacionOcho.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
+    private void btnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAyudaActionPerformed
+        // TODO add your handling code here:
+        try
+        {
+            File file = new File("Lessons\\Funciones.html");
+            Desktop.getDesktop().open(file);
+        }
+        catch (Exception ex){
+           
+        }
+    }//GEN-LAST:event_btnAyudaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -369,6 +394,7 @@ public class ProgramacionSiete extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAyuda;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.JButton btnVerificar;

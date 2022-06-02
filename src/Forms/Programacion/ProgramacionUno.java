@@ -7,8 +7,10 @@ package Forms.Programacion;
 
 import Forms.Menu;
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.File;
 import javax.swing.JOptionPane;
 
 /**
@@ -55,6 +57,7 @@ public class ProgramacionUno extends javax.swing.JFrame {
         btnSiguiente = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
         lblValidacion = new javax.swing.JLabel();
+        btnAyuda = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -145,6 +148,13 @@ public class ProgramacionUno extends javax.swing.JFrame {
             }
         });
 
+        btnAyuda.setText("Ayuda");
+        btnAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAyudaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -159,12 +169,14 @@ public class ProgramacionUno extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jLabel4)
                     .addComponent(radioIncorrectoOut)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(radioIncorrectoOn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(radioIncorrectoIn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(radioIncorrectoOn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(radioIncorrectoIn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRegresar)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnRegresar)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnAyuda))
                             .addComponent(radioCorrecto))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,7 +213,8 @@ public class ProgramacionUno extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnValidar)
                     .addComponent(btnSiguiente)
-                    .addComponent(btnRegresar))
+                    .addComponent(btnRegresar)
+                    .addComponent(btnAyuda))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -261,6 +274,18 @@ public class ProgramacionUno extends javax.swing.JFrame {
         previoProgramacionDos.setVisible(true);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
+    private void btnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAyudaActionPerformed
+        // TODO add your handling code here:
+        try
+        {
+            File file = new File("Lessons\\ImprimirHolaMundo.html");
+            Desktop.getDesktop().open(file);
+        }
+        catch (Exception ex){
+           
+        }
+    }//GEN-LAST:event_btnAyudaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -297,6 +322,7 @@ public class ProgramacionUno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAyuda;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.JButton btnValidar;

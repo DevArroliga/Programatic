@@ -106,7 +106,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(151, 151, 151)
                 .addComponent(btnPlay)
                 .addGap(18, 18, 18)
-                .addComponent(btnLecciones, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnLecciones, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addGap(36, 36, 36))
@@ -195,7 +195,7 @@ public class Menu extends javax.swing.JFrame {
             File file = new File("Lessons\\IntroduccionBasica.html");
             Desktop.getDesktop().open(file);
         } catch (IOException ex) {
-            Logger.getLogger(Temario.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(Temario.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnLeccionesActionPerformed
 

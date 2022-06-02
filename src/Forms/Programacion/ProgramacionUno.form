@@ -58,13 +58,15 @@
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <Component id="radioIncorrectoOut" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="radioIncorrectoOn" alignment="0" max="32767" attributes="0"/>
-                          <Component id="radioIncorrectoIn" alignment="0" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="radioIncorrectoOn" alignment="0" max="32767" attributes="0"/>
+                      <Component id="radioIncorrectoIn" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnRegresar" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="btnRegresar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="btnAyuda" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <Component id="radioCorrecto" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
@@ -112,6 +114,7 @@
                       <Component id="btnValidar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnSiguiente" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnRegresar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAyuda" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="22" max="32767" attributes="0"/>
               </Group>
@@ -268,6 +271,14 @@
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblValidacion">
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAyuda">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ayuda"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAyudaActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
