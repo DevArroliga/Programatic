@@ -6,6 +6,10 @@
 package programatic;
 
 import Forms.Menu;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,8 +22,24 @@ public class Programatic {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Menu menu = new Menu();
-        menu.setVisible(true);
+        if (JOptionPane.showConfirmDialog(null, "¿Primera vez usando Programatic?", "WARNING",
+        JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+            if (JOptionPane.showConfirmDialog(null, "¿Desea comenzar leyendo las lecciones de cada tema?", "WARNING",
+            JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+                try {
+                    File file = new File("Lessons\\IntroduccionBasica.html");
+                    Desktop.getDesktop().open(file);
+                } catch (IOException ex) {
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Se le mandara al menú principal");
+                Menu menu = new Menu();
+                menu.setVisible(true);   
+            }
+        } else {
+            Menu menu = new Menu();
+            menu.setVisible(true);
+        }
     }
     
 }
