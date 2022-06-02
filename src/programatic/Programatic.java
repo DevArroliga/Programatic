@@ -27,6 +27,8 @@ public class Programatic {
             if (JOptionPane.showConfirmDialog(null, "¿Desea comenzar repasando las lecciones de cada tema?", "Lecciones",
             JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
                 try {
+                    Menu menu = new Menu();
+                    menu.setVisible(true); 
                     File file = new File("Lessons\\IntroduccionBasica.html");
                     Desktop.getDesktop().open(file);
                 } catch (IOException ex) {
