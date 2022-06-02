@@ -280,7 +280,8 @@
             </Component>
             <Component class="javax.swing.JLabel" name="lblErrorMain">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel14"/>
+                <Property name="text" type="java.lang.String" value=" "/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
           </SubComponents>
@@ -292,7 +293,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
-            <Property name="text" type="java.lang.String" value="funcion mi &quot;miMetodo&quot; e imprimir &quot;Yon L&#xf3;pez&quot;"/>
+            <Property name="text" type="java.lang.String" value="funcion mi &quot;miMetodo&quot; e imprimir &quot;Yon&quot;"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnRegresar">

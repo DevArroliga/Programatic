@@ -94,7 +94,8 @@ public class ProgramacionSiete extends javax.swing.JFrame {
 
         jLabel11.setText(");");
 
-        lblErrorMain.setText("jLabel14");
+        lblErrorMain.setText(" ");
+        lblErrorMain.setToolTipText("");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -174,7 +175,7 @@ public class ProgramacionSiete extends javax.swing.JFrame {
 
         jLabel12.setText("Crear un parametro llamado \"nombre\" de tipo String a la");
 
-        jLabel13.setText("funcion mi \"miMetodo\" e imprimir \"Yon López\"");
+        jLabel13.setText("funcion mi \"miMetodo\" e imprimir \"Yon\"");
 
         btnRegresar.setText("Regresar");
 
