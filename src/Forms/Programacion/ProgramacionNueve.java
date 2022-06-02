@@ -274,6 +274,10 @@ public class ProgramacionNueve extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "¡Felicidades!"
                 + "\n"
                 + "Has terminado todas las lecciones prácticas de Programatic.");
+        
+        Forms.Menu menuMain = new Forms.Menu();
+        menuMain.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnFinalizarActionPerformed
 
     private void btnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAyudaActionPerformed
