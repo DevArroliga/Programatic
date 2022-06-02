@@ -105,7 +105,7 @@
                   <Component id="radioString" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="radioFloat" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="8" max="32767" attributes="0"/>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
                   <Component id="lblValidacion" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -253,9 +253,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblValidacion">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="x"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnAyuda">
           <Properties>

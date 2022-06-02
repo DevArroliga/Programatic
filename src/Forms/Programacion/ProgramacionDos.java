@@ -136,8 +136,6 @@ public class ProgramacionDos extends javax.swing.JFrame {
             }
         });
 
-        lblValidacion.setText("x");
-
         btnAyuda.setText("Ayuda");
         btnAyuda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,7 +196,7 @@ public class ProgramacionDos extends javax.swing.JFrame {
                 .addComponent(radioString)
                 .addGap(18, 18, 18)
                 .addComponent(radioFloat)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addComponent(lblValidacion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
