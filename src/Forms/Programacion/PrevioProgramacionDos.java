@@ -229,7 +229,7 @@ public class PrevioProgramacionDos extends javax.swing.JFrame {
         // TODO add your handling code here:
         try
         {
-            File file = new File("Lessons\\ImprimirHolaMundo.html");
+            File file = new File("Lessons\\Variables.html");
             Desktop.getDesktop().open(file);
         }
         catch (Exception ex){
